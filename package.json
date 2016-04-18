@@ -5,6 +5,7 @@
   "main": "webpack.config.js",
   "dependencies": {
     "angular": "^1.5.3",
+    "express": "^4.13.4",
     "gulp": "^3.9.1",
     "webpack": "^1.12.15"
   },
