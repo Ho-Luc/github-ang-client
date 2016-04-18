@@ -1,0 +1,25 @@
+{
+  "name": "github-ang-client",
+  "version": "1.0.0",
+  "description": "my version of github with angular",
+  "main": "webpack.config.js",
+  "dependencies": {
+    "angular": "^1.5.3",
+    "gulp": "^3.9.1",
+    "webpack": "^1.12.15"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ho-Luc/github-ang-client.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ho-Luc/github-ang-client/issues"
+  },
+  "homepage": "https://github.com/Ho-Luc/github-ang-client#readme"
+}
