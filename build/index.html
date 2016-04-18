@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="GithubApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Luc's Github angular app</title>
+  </head>
+  <body ng-init="proctrl.getUser()" ng-controller="ProfileController as proctrl">
+    <h1>Luc's "better" GitHub</h1>
+    <img src="{{proctrl.userData.avatar_url}}" />
+    {{proctrl.userData}}
+
+    <p>Luc has #{{proctrl.userData.followers}} of followers.</p>
+    <p>Luc is following #{{proctrl.userData.following}} of people.</p>
+    <section ng-init="proctrl.getRepos()">
+      <h2>List of published repositories</h2>
+      <ul ng-repeat="repo in proctrl.userRepos">
+        <li>Repo name : {{repo.name}} <br>
+          <a href="{{repo.html_url}}">Click to see repo</a>
+        </li>
+      </ul>
+    </section>
+
+    <script src="./bundle.js"></script>
+  </body>
+</html>
