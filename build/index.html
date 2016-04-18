@@ -7,10 +7,10 @@
   <body ng-init="proctrl.getUser()" ng-controller="ProfileController as proctrl">
     <h1>Luc's "better" GitHub</h1>
     <img src="{{proctrl.userData.avatar_url}}" />
-    {{proctrl.userData}}
 
     <p>Luc has #{{proctrl.userData.followers}} of followers.</p>
     <p>Luc is following #{{proctrl.userData.following}} of people.</p>
+    <p>Luc has #{{proctrl.stars}} of stars.</p>
     <section ng-init="proctrl.getRepos()">
       <h2>List of published repositories</h2>
       <ul ng-repeat="repo in proctrl.userRepos">
